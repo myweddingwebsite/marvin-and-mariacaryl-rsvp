@@ -1,6 +1,6 @@
 # Wedding RSVP — Marvin & Maria Caryl
 
-Dusty Blue · Dusty Blue & Silver
+Dusty Blue · Dusty Blue, White, Gray
 Wedding: **December 19, 2026** · RSVP deadline: **December 8, 2026**
 
 This version runs on **Vercel Functions + Neon Postgres**, not Google Apps Script.

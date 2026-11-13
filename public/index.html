@@ -6,41 +6,42 @@
   <title>RSVP &#8212; Marvin &amp; Maria Caryl</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=Pinyon+Script&family=Great+Vibes&family=Pinyon+Script&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <style>
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     :root {
-      /* Dusty Blue — dusty blue · slate · silver · white */
-      --navy-deep: #2F4153;
-      --navy:      #6A8296;
-      --navy-soft: #A9B4BF;
+      /* Dusty Blue — dusty rose · vintage mauve · english rose · champagne · rose gold */
+      --navy-deep: #34495C;
+      --navy:      #5F7F9B;
+      --navy-soft: #8FA9BF;
 
-      --army-deep: #6A8296;
-      --army:      #FAFBFC;
-      --army-soft: #7F96AA;
+      --army-deep: #5F7F9B;
+      --army:      #FBFCFD;
+      --army-soft: #8FA9BF;
 
       --white: #FFFFFF;
-      --ivory:  #FAFBFC;
-      --ivory-mid: #EEF1F4;
+      --ivory:  #FBFCFD;
+      --ivory-mid: #EAEEF2;
 
-      --text-light:       #2F4153;
-      --text-light-soft:  rgba(47,65,83,0.92);
-      --text-light-muted: rgba(47,65,83,0.82);
-      --border-light:     rgba(47,65,83,0.30);
+      --text-light:       #34495C;
+      --text-light-soft:  rgba(52,73,92,0.92);
+      --text-light-muted: rgba(52,73,92,0.82);
+      --border-light:     rgba(52,73,92,0.30);
 
-      --text-dark:  #2F4153;
-      --text-mid:   rgba(47,65,83,0.86);
-      --text-soft:  rgba(47,65,83,0.65);
-      --text-muted: rgba(47,65,83,0.45);
+      --text-dark:  #34495C;
+      --text-mid:   rgba(52,73,92,0.86);
+      --text-soft:  rgba(52,73,92,0.65);
+      --text-muted: rgba(52,73,92,0.45);
 
-      --border:      rgba(47,65,83,0.18);
-      --border-mid:  rgba(47,65,83,0.12);
-      --border-soft: rgba(47,65,83,0.08);
+      --border:      rgba(52,73,92,0.18);
+      --border-mid:  rgba(52,73,92,0.12);
+      --border-soft: rgba(52,73,92,0.08);
 
-      --border-oncard:      rgba(47,65,83,0.42);
-      --border-oncard-mid:  rgba(169,180,191,0.55);
-      --border-oncard-soft: rgba(169,180,191,0.45);
+      --border-oncard:      rgba(52,73,92,0.42);
+      --border-oncard-mid:  rgba(143,169,191,0.55);
+      --border-oncard-soft: rgba(143,169,191,0.45);
 
-      --shadow-card: 0 34px 84px rgba(47,65,83,0.28), 0 10px 28px rgba(47,65,83,0.18);
+      --shadow-card: 0 34px 84px rgba(52,73,92,0.28), 0 10px 28px rgba(52,73,92,0.18);
       --transition:  0.28s cubic-bezier(0.4,0,0.2,1);
       --radius-outer: 30px;
       --radius-mid:   27px;
@@ -53,12 +54,12 @@
     body {
       min-height: 100vh;
       font-family: 'Jost', sans-serif;
-      background-color: #EEF2F5;
+      background-color: #F5F7F9;
       background-image:
         radial-gradient(ellipse 120% 50% at 50% 0%,   rgba(255,255,255,0.9) 0%, transparent 55%),
-        radial-gradient(ellipse 60% 70% at 0% 100%,   rgba(47,65,83,0.08) 0%, transparent 55%),
-        radial-gradient(ellipse 55% 65% at 100% 40%,  rgba(169,180,191,0.14) 0%, transparent 55%),
-        linear-gradient(180deg, #FAFBFC 0%, #EEF2F5 45%, #DCE4EB 100%);
+        radial-gradient(ellipse 60% 70% at 0% 100%,   rgba(52,73,92,0.08) 0%, transparent 55%),
+        radial-gradient(ellipse 55% 65% at 100% 40%,  rgba(143,169,191,0.14) 0%, transparent 55%),
+        linear-gradient(180deg, #FBFCFD 0%, #F5F7F9 45%, #EAEEF2 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -70,11 +71,11 @@
     .bg-glow { position: fixed; pointer-events: none; z-index: 0; border-radius: 50%; }
     .bg-glow-1 {
       width: 680px; height: 680px; top: -260px; right: -200px;
-      background: radial-gradient(circle, rgba(47,65,83,0.07) 0%, transparent 66%);
+      background: radial-gradient(circle, rgba(52,73,92,0.07) 0%, transparent 66%);
     }
     .bg-glow-2 {
       width: 540px; height: 540px; bottom: -190px; left: -170px;
-      background: radial-gradient(circle, rgba(127,150,170,0.30) 0%, transparent 66%);
+      background: radial-gradient(circle, rgba(95,127,155,0.30) 0%, transparent 66%);
     }
 
     /* ================================================================
@@ -92,28 +93,28 @@
     .card-f1 {
       padding: 3px;
       border-radius: var(--radius-outer);
-      background: linear-gradient(145deg, #4A6074, #A9B4BF, #DCE4EB, #A9B4BF, #4A6074);
+      background: linear-gradient(145deg, #5F7F9B, #8FA9BF, #EAEEF2, #8FA9BF, #5F7F9B);
       box-shadow: var(--shadow-card),
-        0 0 0 6px  rgba(47,65,83,0.08),
-        0 0 0 10px rgba(169,180,191,0.10);
+        0 0 0 6px  rgba(52,73,92,0.08),
+        0 0 0 10px rgba(143,169,191,0.10);
     }
-    .card-f2 { padding: 2px; border-radius: var(--radius-mid); background: #FAFBFC; }
+    .card-f2 { padding: 2px; border-radius: var(--radius-mid); background: #FBFCFD; }
 
     /* CARD SURFACE — navy card, cream ink, light-gold & powder-blue accents */
     .card {
-      background: linear-gradient(165deg, #FAFBFC 0%, #F6F8FA 55%, #E6ECF1 100%);
+      background: linear-gradient(165deg, #FBFCFD 0%, #F2F5F8 55%, #EAEEF2 100%);
       overflow: hidden; position: relative;
       border-radius: var(--radius-inner);
     }
     .card::before {
-      content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; pointer-events: none;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.73' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
     }
     .card::after {
-      content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; pointer-events: none;
       background:
         radial-gradient(ellipse 70% 50% at 25% 15%, rgba(255,255,255,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 55% at 80% 85%, rgba(169,180,191,0.14) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 55% at 80% 85%, rgba(143,169,191,0.14) 0%, transparent 60%);
     }
 
     .card-ib1 { position: absolute; inset: 11px; border: 1px solid var(--border-oncard-soft); border-radius: calc(var(--radius-inner) - 4px); pointer-events: none; z-index: 1; }
@@ -123,7 +124,7 @@
     .card-accent-stripe {
       height: 5px;
       background: linear-gradient(90deg,
-        #A9B4BF 0%, #DDE3E8 25%, #FAFBFC 50%, #DDE3E8 75%, #A9B4BF 100%);
+        #8FA9BF 0%, #C7CED6 25%, #FBFCFD 50%, #C7CED6 75%, #8FA9BF 100%);
       position: relative; z-index: 3;
     }
 
@@ -140,7 +141,7 @@
         .header-img { display: block; width: 100%; max-width: 100%; height: auto; margin: 0; }
     .tagline-rsvp {
       font-family: 'Cinzel', serif; font-size: clamp(19px, 4.2vw, 26px); font-weight: 500;
-      letter-spacing: 0.5em; text-indent: 0.5em; color: #2F4153; margin-bottom: 6px;
+      letter-spacing: 0.5em; text-indent: 0.5em; color: #34495C; margin-bottom: 6px;
       position: relative; z-index: 1;
     }
     .card-header > * { position: relative; z-index: 1; }
@@ -168,7 +169,7 @@
       font-family: 'Pinyon Script', cursive;
       font-style: normal; font-weight: 400;
       font-size: clamp(28px, 5.4vw, 36px);
-      color: #A9B4BF; display: block;
+      color: #8FA9BF; display: block;
       line-height: 0.9; margin: -6px 0 -4px; opacity: 1;
     }
 
@@ -203,19 +204,19 @@
     /* Tagline band — olive green, ivory text */
     .tagline-band {
       padding: 18px 56px;
-      background: linear-gradient(135deg, #4A6074, #6A8296 55%, #4A6074);
-      border-bottom: 1px solid rgba(47,65,83,0.18);
+      background: linear-gradient(135deg, #5F7F9B, #5F7F9B 55%, #5F7F9B);
+      border-bottom: 1px solid rgba(52,73,92,0.18);
       text-align: center;
       position: relative;
     }
     .tagline-band::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none;
       background: linear-gradient(120deg, rgba(255,255,255,0.10) 0%, transparent 55%);
     }
     .tagline-text {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(16px, 3vw, 21px); font-style: italic; font-weight: 300;
-      color: #FAFBFC; line-height: 1.68;
+      color: #FBFCFD; line-height: 1.68;
       position: relative; z-index: 1;
     }
     .tagline-text strong { font-style: normal; font-weight: 600; color: #FFFFFF; }
@@ -255,8 +256,8 @@
     .status-bar.error .status-dot { background: #8F2A22; }
     .status-bar.error { color: #8F2A22; }
 
-    .status-bar.suggest { color: #2F4153; }
-    .status-bar.suggest .status-dot { background: #7F96AA; }
+    .status-bar.suggest { color: #34495C; }
+    .status-bar.suggest .status-dot { background: #8FA9BF; }
 
     /* ---- "Did you mean" suggestions ---- */
     .suggest-box { display: none; flex-direction: column; gap: 8px; margin-top: 12px; }
@@ -265,35 +266,35 @@
     .suggest-btn {
       display: flex; align-items: center; justify-content: space-between; gap: 12px;
       width: 100%; min-height: 48px; padding: 10px 16px; text-align: left; cursor: pointer;
-      background: rgba(127,150,170,0.18); border: 1px solid var(--border-oncard); border-radius: 8px;
+      background: rgba(95,127,155,0.18); border: 1px solid var(--border-oncard); border-radius: 8px;
       font-family: 'Jost', sans-serif; font-size: 15px; font-weight: 500; color: var(--text-light);
       transition: background var(--transition), border-color var(--transition);
       -webkit-tap-highlight-color: transparent;
     }
-    .suggest-btn:hover { background: rgba(127,150,170,0.32); border-color: #2F4153; }
-    .suggest-btn:focus-visible { outline: 2px solid #2F4153; outline-offset: 2px; }
+    .suggest-btn:hover { background: rgba(95,127,155,0.32); border-color: #34495C; }
+    .suggest-btn:focus-visible { outline: 2px solid #34495C; outline-offset: 2px; }
     .suggest-name { word-break: break-word; }
     .suggest-go { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px;
-      color: #6A8296; white-space: nowrap; flex-shrink: 0; }
+      color: #5F7F9B; white-space: nowrap; flex-shrink: 0; }
     @media (prefers-reduced-motion: reduce) { .suggest-box.visible { animation: none; } }
 
     .seat-panel {
       text-align: center; padding: 22px 20px;
-      background: #DCE4EB;
-      border-top: 1px solid rgba(47,65,83,0.18);
-      border-bottom: 1px solid rgba(47,65,83,0.18);
+      background: #EAEEF2;
+      border-top: 1px solid rgba(52,73,92,0.18);
+      border-bottom: 1px solid rgba(52,73,92,0.18);
       margin: 0 -56px;
     }
     .seat-panel-label {
       font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500;
-      letter-spacing: 0.24em; text-transform: uppercase; color: #2F4153;
+      letter-spacing: 0.24em; text-transform: uppercase; color: #34495C;
       margin-bottom: 6px;
     }
     .seat-number {
-      font-family: 'Cinzel', serif; font-size: 34px; font-weight: 600; color: #2F4153;
+      font-family: 'Cinzel', serif; font-size: 34px; font-weight: 600; color: #34495C;
     }
     .seat-sublabel {
-      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #2F4153; margin-top: 2px;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #34495C; margin-top: 2px;
     }
 
     .guest-section { padding: 0 56px; }
@@ -315,7 +316,7 @@
     .attend-toggle input { display: none; }
     .toggle-track {
       width: 32px; height: 17px; border-radius: 20px;
-      background: rgba(47,65,83,0.18); position: relative; flex-shrink: 0;
+      background: rgba(52,73,92,0.18); position: relative; flex-shrink: 0;
       transition: background var(--transition);
       border: 1px solid var(--border-oncard);
     }
@@ -323,9 +324,9 @@
       position: absolute; top: 1px; left: 1px;
       width: 13px; height: 13px; border-radius: 50%;
       background: #fff; transition: transform var(--transition);
-      box-shadow: 0 1px 3px rgba(47,65,83,0.35);
+      box-shadow: 0 1px 3px rgba(52,73,92,0.35);
     }
-    .attend-toggle input:checked + .toggle-track { background: #7F96AA; border-color: #7F96AA; }
+    .attend-toggle input:checked + .toggle-track { background: #8FA9BF; border-color: #8FA9BF; }
     .attend-toggle input:checked + .toggle-track .toggle-thumb { transform: translateX(15px); background: #FFFFFF; }
     .toggle-label { font-size: 12px; color: var(--text-light-muted); min-width: 70px; text-align: right; }
 
@@ -337,29 +338,29 @@
       font-family: 'Cormorant Garamond', serif; font-size: 17px; line-height: 1.55;
       outline: none; transition: border-color var(--transition);
     }
-    .message-input:focus { border-color: #7F96AA; background: rgba(255,255,255,0.8); }
+    .message-input:focus { border-color: #8FA9BF; background: rgba(255,255,255,0.8); }
     .message-input::placeholder { color: var(--text-light-muted); font-style: italic; }
     .optional-tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500;
       font-size: 14px; letter-spacing: 0.02em; text-transform: none; color: var(--text-light-muted); }
     .message-count { text-align: right; font-size: 12px; color: var(--text-light-muted); margin-top: 6px; }
     .summary-message { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px;
-      color: #2F4153; line-height: 1.55; text-align: right; white-space: pre-wrap; word-break: break-word; }
+      color: #34495C; line-height: 1.55; text-align: right; white-space: pre-wrap; word-break: break-word; }
 
     .btn-wrap { padding: 30px 56px 36px; }
     .btn-submit {
       width: 100%; padding: 16px; cursor: pointer;
-      background: #4A6074; color: #FAFBFC;
-      border: 1px solid #4A6074; border-radius: 8px;
+      background: #5F7F9B; color: #FBFCFD;
+      border: 1px solid #5F7F9B; border-radius: 8px;
       font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500;
       letter-spacing: 0.32em; text-transform: uppercase; text-indent: 0.32em;
       transition: all var(--transition); position: relative; overflow: hidden;
       display: flex; align-items: center; justify-content: center; gap: 10px;
     }
-    .btn-submit:hover:not(:disabled) { background: #2F4153; border-color: #2F4153; }
+    .btn-submit:hover:not(:disabled) { background: #34495C; border-color: #34495C; }
     .btn-submit:disabled { opacity: 0.55; cursor: not-allowed; }
     .btn-spinner {
       display: none; width: 14px; height: 14px;
-      border: 1.5px solid rgba(251,247,236,0.4); border-top-color: #FAFBFC;
+      border: 1.5px solid rgba(251,252,253,0.4); border-top-color: #FBFCFD;
       border-radius: 50%; animation: spin .8s linear infinite;
     }
     .btn-submit.loading .btn-spinner { display: inline-block; }
@@ -374,25 +375,25 @@
       line-height: 1.9; color: var(--text-light-muted); margin-bottom: 10px;
     }
     .note-section p:last-child { margin-bottom: 0; }
-    .note-section p strong { color: #2F4153; font-style: normal; font-weight: 600; }
+    .note-section p strong { color: #34495C; font-style: normal; font-weight: 600; }
 
     /* Deadline band — olive green, ivory text */
     .deadline-band {
       padding: 14px 56px;
-      background: linear-gradient(135deg, #4A6074, #6A8296 55%, #4A6074);
-      border-top: 1px solid rgba(47,65,83,0.18);
+      background: linear-gradient(135deg, #5F7F9B, #5F7F9B 55%, #5F7F9B);
+      border-top: 1px solid rgba(52,73,92,0.18);
       text-align: center;
       position: relative;
     }
     .deadline-band::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none;
       background: linear-gradient(120deg, rgba(255,255,255,0.10) 0%, transparent 55%);
     }
     .deadline-label {
       font-family: 'Jost', sans-serif;
       font-size: clamp(9px, 1.8vw, 12px); font-weight: 600;
       letter-spacing: 0.38em; text-transform: uppercase;
-      color: #FAFBFC; opacity: 1;
+      color: #FBFCFD; opacity: 1;
       display: block; margin-bottom: 4px;
       position: relative; z-index: 1;
     }
@@ -412,173 +413,196 @@
     }
 
     /* attending badge in gold so it reads differently from "declined" */
-    .summary-badge.accept { background: rgba(169,180,191,0.18) !important; color: #3E5163 !important; border-color: rgba(169,180,191,0.6) !important; }
+    .summary-badge.accept { background: rgba(143,169,191,0.18) !important; color: #34495C !important; border-color: rgba(143,169,191,0.6) !important; }
 
 
-    /* ===== Dusty blue card body · silver bands ===== */
-    .card {
-      background: linear-gradient(165deg, #8DA2B6 0%, #8197AC 55%, #758CA2 100%) !important;
-      --text-light: #FFFFFF; --text-light-soft: rgba(255,255,255,0.92); --text-light-muted: rgba(255,255,255,0.78);
-      --border-oncard: rgba(255,255,255,0.45); --border-oncard-mid: rgba(226,231,236,0.55); --border-oncard-soft: rgba(226,231,236,0.45);
-      --army-soft: #CBD3DA;
-    }
+    /* ===== Dusty Blue theme ===== */
+    body { background-color: #EAEEF2 !important; background-image:
+        radial-gradient(ellipse 120% 50% at 50% 0%, rgba(255,255,255,0.7) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 70% at 0% 100%, rgba(143,169,191,0.20) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 65% at 100% 40%, rgba(168,188,205,0.16) 0%, transparent 55%),
+        linear-gradient(180deg, #F5F7F9 0%, #EAEEF2 100%) !important; }
+    .card-f1 { background: linear-gradient(145deg, #C7CED6, #EAEEF2, #A9B4BF, #EAEEF2, #C7CED6) !important; }
+    .card-f2 { background: #F2F5F8 !important; }
+    .card { background: linear-gradient(180deg, #F8FAFB 0%, #F5F7F9 45%, #EAEEF2 100%) !important; }
     .card::after { background:
-        radial-gradient(ellipse 85% 38% at 50% 0%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, transparent 72%),
-        radial-gradient(ellipse 60% 55% at 80% 90%, rgba(255,255,255,0.10) 0%, transparent 60%) !important; }
-    .card .header-eyebrow, .card .wedding-date { color: #EEF3F7 !important; }
-    .card .names-rule-flower { color: #DDE3E8 !important; }
-    .card .suggest-btn:hover { border-color: #EEF3F7 !important; }
-    .card .message-input:focus { border-color: #EEF3F7 !important; }
-    .card .status-bar.found .status-dot { background: #EEF3F7 !important; }
-    .card-accent-stripe { background: linear-gradient(90deg, #A9B4BF 0%, #DDE3E8 25%, #F4F6F8 50%, #DDE3E8 75%, #A9B4BF 100%) !important; }
-    .card .couple-name, .card .header-eyebrow, .card .wedding-date, .card .header-title,
-    .card .field-label, .card .field-input, .card .guest-num, .card .page-footer p,
-    .card .status-bar.suggest, .card .suggest-btn, .card .names-rule-flower { color: #FFFFFF !important; }
-    .card .couple-amp { color: #DDE3E8 !important; }
-    .card .field-input::placeholder, .card .message-input::placeholder { color: rgba(255,255,255,0.6) !important; }
+        radial-gradient(ellipse 70% 30% at 15% 100%, rgba(143,169,191,0.26) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 26% at 90% 96%, rgba(199,206,214,0.26) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 0% 55%, rgba(199,206,214,0.14) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 100% 50%, rgba(168,188,205,0.10) 0%, transparent 70%) !important; }
+    .card-accent-stripe { background: linear-gradient(90deg, #C7CED6 0%, #A9B4BF 30%, #EAEEF2 50%, #A9B4BF 70%, #C7CED6 100%) !important; }
+    .card-header { padding: 54px 44px 30px !important; }
+    .grace { font-family: 'Lora', serif; font-size: clamp(13px, 2.9vw, 15px); font-weight: 500; line-height: 1.6; color: #34495C; }
+    .grace-we { font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #34495C; margin: 14px 0 4px; }
+    .names-line { margin: 8px 0 20px; line-height: 1.05; max-width: 100%; }
+    .card .names-line .couple-name {
+      display: inline !important; font-family: 'Great Vibes', cursive !important;
+      font-size: 34px !important; font-size: clamp(27px, 8.6vw, 54px) !important; color: #5F7F9B !important;
+      padding: 0 !important; margin: 0 !important;
+    }
+    .card .names-line .couple-amp {
+      display: inline !important; font-family: 'Great Vibes', cursive !important;
+      font-size: 26px !important; font-size: clamp(20px, 6vw, 36px) !important; color: #5F7F9B !important; margin: 0 0.18em !important;
+    }
+    .date-block { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; margin: 16px 0 4px; color: #34495C; }
+    .db-side { font-family: 'Lora', serif; font-size: clamp(13px, 3vw, 16px); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-width: 82px; }
+    .db-day { font-family: 'Lora', serif; font-size: clamp(30px, 7vw, 38px); font-weight: 600; line-height: 1; }
+    .db-bar { width: 2px; height: 38px; background: #34495C; border-radius: 2px; margin: 0 16px; -webkit-flex-shrink: 0; flex-shrink: 0; }
+    .card .names-rule-flower { color: #A9B4BF !important; }
+    .card .header-title { color: #5F7F9B !important; }
 
-    /* Tagline & deadline bands — cream/light gold with navy text */
-    .tagline-band, .deadline-band {
-      background: linear-gradient(135deg, #C9D1D8, #EEF1F4 55%, #C9D1D8) !important;
-      border-color: rgba(47,65,83,0.25) !important;
-    }
-    .tagline-band::before, .deadline-band::before { background: linear-gradient(120deg, rgba(255,255,255,0.35) 0%, transparent 55%) !important; }
-    .tagline-text, .tagline-text strong, .deadline-label, .deadline-date { color: #2F4153 !important; }
+    /* Bands — sage with white text */
+    .tagline-band, .deadline-band { background: linear-gradient(135deg, #8FA9BF, #C7CED6 55%, #8FA9BF) !important; border-color: rgba(52,73,92,0.12) !important; }
+    .tagline-band::before, .deadline-band::before { background: linear-gradient(120deg, rgba(255,255,255,0.22) 0%, transparent 55%) !important; }
+    .tagline-text, .tagline-text strong, .deadline-label, .deadline-date { color: #2E4152 !important; }
 
-    /* Seat panel — midnight */
-    .seat-panel { background: #6A8298 !important; border-color: rgba(226,231,236,0.4) !important; }
-    .seat-panel-label, .seat-number, .seat-sublabel { color: #FFFFFF !important; }
-    .seat-number { color: #DDE3E8 !important; }
+    /* Seat panel, controls, button */
+    .seat-panel { background: #EAEEF2 !important; border-color: rgba(95,127,155,0.25) !important; }
+    .seat-panel-label, .seat-sublabel { color: #34495C !important; }
+    .seat-number { color: #5F7F9B !important; }
+    .card .attend-toggle input:checked + .toggle-track { background: #5F7F9B !important; border-color: #5F7F9B !important; }
+    .card .btn-submit { background: #5F7F9B !important; border-color: #5F7F9B !important; color: #FFFFFF !important; }
+    .card .btn-submit:hover:not(:disabled) { background: #4E6A82 !important; border-color: #4E6A82 !important; }
+    .card .message-input { background: rgba(255,255,255,0.55) !important; }
+    .card .message-input:focus { border-color: #A9B4BF !important; }
+    .card .status-bar.found .status-dot { background: #8FA9BF !important; }
+    .card .page-footer p { color: #5F7F9B !important; }
+    .modal-names, .modal-amp { font-family: 'Great Vibes', cursive !important; color: #5F7F9B !important; }
+    .modal-accent { background: linear-gradient(90deg, #C7CED6, #A9B4BF, #EAEEF2, #A9B4BF, #C7CED6) !important; }
+    .btn-modal-close { background: #5F7F9B !important; border-color: #5F7F9B !important; color: #FFFFFF !important; }
+    @media (max-width: 540px) {
+      .card-header { padding: 46px 24px 26px !important; }
+      .db-bar { margin: 0 10px; } .db-side { min-width: 70px; }
+    }
 
-    /* Form controls on navy */
-    .card .suggest-btn { background: rgba(255,255,255,0.10) !important; border-color: rgba(255,255,255,0.4) !important; }
-    .card .suggest-btn:hover { background: rgba(255,255,255,0.18) !important; border-color: #DDE3E8 !important; }
-    .card .suggest-go { color: #DDE3E8 !important; }
-    .card .status-bar.error { color: #FFD3CC !important; }
-    .card .status-bar.error .status-dot { background: #FFB4A8 !important; }
-    .card .toggle-track { background: rgba(255,255,255,0.22) !important; border-color: rgba(255,255,255,0.45) !important; }
-    .card .attend-toggle input:checked + .toggle-track { background: #C3CCD4 !important; border-color: #C3CCD4 !important; }
-    .card .message-input { background: rgba(255,255,255,0.08) !important; border-color: rgba(255,255,255,0.45) !important; color: #FFFFFF !important; }
-    .card .message-input:focus { border-color: #DDE3E8 !important; background: rgba(255,255,255,0.12) !important; }
-    .card .btn-submit { background: #DDE3E8 !important; border-color: #DDE3E8 !important; color: #2F4153 !important; font-weight: 600 !important; }
-    .card .btn-submit:hover:not(:disabled) { background: #F1F4F6 !important; border-color: #F1F4F6 !important; }
-    .card .btn-spinner { border-color: rgba(47,65,83,0.3) !important; border-top-color: #2F4153 !important; }
-    .card .note-section p { color: rgba(255,255,255,0.82) !important; }
-    .card .note-section p strong { color: #FFFFFF !important; }
+    /* ===== Sea, palette accents & falling flowers ===== */
+    .card { background: linear-gradient(180deg, #FEFEFF 0%, #F5F7F9 55%, #EAEEF2 100%) !important; }
+    .card::after { background:
+        radial-gradient(ellipse 70% 26% at 10% 0%, rgba(168,188,205,0.14) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 24% at 95% 4%, rgba(181,198,213,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 0% 60%, rgba(227,232,237,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 100% 55%, rgba(126,152,174,0.06) 0%, transparent 70%) !important; }
+    .card > .sea { position: absolute !important; left: 0; right: 0; bottom: 0; height: 150px; z-index: 0 !important; pointer-events: none;
+      background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 150' preserveAspectRatio='none'%3E%3Cpath d='M0 70 C90 45 170 95 300 70 C430 45 510 95 600 70 L600 150 L0 150Z' fill='%23C8A2C8' fill-opacity='.16'/%3E%3Cpath d='M0 95 C100 75 190 118 300 96 C410 74 500 118 600 96 L600 150 L0 150Z' fill='%23F88379' fill-opacity='.14'/%3E%3Cpath d='M0 118 C110 102 200 136 300 120 C400 104 490 136 600 120 L600 150 L0 150Z' fill='%237A8A45' fill-opacity='.12'/%3E%3C/svg%3E") bottom center / 100% 100% no-repeat; }
+    body { background-image:
+        radial-gradient(ellipse 120% 50% at 50% 0%, rgba(255,255,255,0.75) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 60% at 0% 100%, rgba(181,198,213,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 55% at 100% 30%, rgba(168,188,205,0.16) 0%, transparent 55%),
+        linear-gradient(180deg, #F5F7F9 0%, #EAEEF2 100%) !important; }
+    .card-f1 { background: linear-gradient(145deg, #A9B4BF, #E3E8ED, #B5C6D5, #C7CED6, #A9B4BF) !important; }
+    .card-accent-stripe { background: linear-gradient(90deg, #8FA9BF 0%, #A9B4BF 20%, #7E98AE 38%, #B5C6D5 56%, #E3E8ED 76%, #C7CED6 100%) !important; }
+    .modal-accent { background: linear-gradient(90deg, #8FA9BF, #A9B4BF, #7E98AE, #B5C6D5, #E3E8ED, #C7CED6) !important; }
+    .grace { font-family: 'Cormorant Garamond', serif !important; font-size: clamp(15px, 3.6vw, 18px) !important; font-style: italic; font-weight: 500 !important; letter-spacing: 0.02em; }
+    .card .names-line .couple-name { font-family: 'Pinyon Script', cursive !important; }
+    .card .names-line .couple-amp { color: #A9B4BF !important; font-family: 'Cormorant Garamond', serif !important; font-style: italic; }
+    .card .names-line .couple-name { display: block !important; font-size: 47px !important; font-size: clamp(40px, calc(8.6vw + 13px), 67px) !important; line-height: 1.08 !important; }
+    .card .names-line .couple-amp { display: block !important; margin: 0 !important; line-height: 1.05 !important; }
+    .db-side, .db-day { font-family: 'Cormorant Garamond', serif !important; }
+    .db-side { letter-spacing: 0.22em !important; font-size: clamp(12px, 2.8vw, 14px) !important; font-weight: 600 !important; }
+    .db-day { font-size: clamp(34px, 8vw, 44px) !important; font-weight: 500 !important; color: #5F7F9B; }
+    .db-bar { width: 1px !important; background: #8FA9BF !important; }
+    .card .names-rule-flower { color: #C7CED6 !important; }
+    .card > .falling-flowers { position: absolute !important; top: 0; right: 0; bottom: 0; left: 0; z-index: 1 !important; pointer-events: none; overflow: hidden; }
+    .ff { position: absolute; top: -30px; width: var(--sz, 14px); height: var(--sz, 14px); opacity: 0;
+      animation: ffFall var(--dur, 16s) linear var(--delay, 0s) infinite !important; will-change: top, transform; }
+    .ff svg { display: block; width: 100%; height: 100%; animation: ffSpin var(--spin, 7s) ease-in-out infinite alternate !important; }
+    @keyframes ffFall {
+      0% { top: -30px; transform: translateX(0); opacity: 0; }
+      6% { opacity: .85; }
+      30% { transform: translateX(var(--sway, 18px)); }
+      55% { transform: translateX(calc(var(--sway, 18px) * -0.6)); }
+      80% { transform: translateX(var(--sway, 18px)); opacity: .8; }
+      100% { top: 100%; transform: translateX(0); opacity: 0; }
+    }
+    @keyframes ffSpin { from { transform: rotate(-35deg); } to { transform: rotate(145deg); } }
+    @media (prefers-reduced-motion: reduce) { .falling-flowers { display: none; } }
 
 
-    /* ===== Dusty Blue monogram header (from invitation) ===== */
-    .card-header { padding-top: 54px; padding-bottom: 34px; }
-    .card-header > .mono {
-      position: absolute; z-index: 0; pointer-events: none; user-select: none;
-      font-family: 'Playfair Display', serif; font-weight: 400; line-height: 1;
-      color: rgba(255,255,255,0.15);
-    }
-    .mono-p   { font-size: clamp(190px, 46vw, 270px); top: -34px; left: -10px; }
-    .mono-amp { font-size: clamp(170px, 40vw, 230px); top: 22%; right: -26px; }
-    .mono-c   { font-size: clamp(190px, 46vw, 270px); bottom: -78px; left: 8%; }
-    .card .couple-name {
-      font-family: 'Playfair Display', serif !important; font-weight: 400 !important;
-      font-size: clamp(34px, 8.4vw, 50px) !important; letter-spacing: 0.01em;
-      line-height: 1.08 !important; padding: 0.06em 0.1em 0.08em !important; margin: 0 !important;
-    }
-    .card .couple-amp {
-      font-family: 'Great Vibes', cursive !important; font-size: clamp(24px, 5.6vw, 32px) !important;
-      line-height: 0.9 !important; margin: -6px 0 -6px !important; color: #FFFFFF !important;
-    }
-    .card .wedding-date {
-      font-family: 'Jost', sans-serif; font-weight: 300; font-size: clamp(24px, 5.8vw, 32px) !important;
-      letter-spacing: 0.08em !important; text-transform: none; margin: 22px 0 4px !important; opacity: 1 !important;
-      color: #FFFFFF !important;
-    }
-    .card .wedding-date i { font-style: normal; font-weight: 200; opacity: 0.65; padding: 0 0.15em; }
-    .wedding-day {
-      font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 400; letter-spacing: 0.42em; text-indent: 0.42em;
-      text-transform: uppercase; color: #EEF3F7; margin-bottom: 6px;
-    }
-    .card .header-eyebrow { letter-spacing: 0.36em !important; margin-bottom: 16px !important; }
-    .card .names-rule-flower { font-size: 10px; }
-    .card-f1 { background: linear-gradient(145deg, #A9B4BF, #EEF1F4, #8DA2B6, #EEF1F4, #A9B4BF) !important; }
-    .modal-names { font-family: 'Playfair Display', serif !important; font-size: clamp(24px, 6.4vw, 30px) !important; line-height: 1.2 !important; }
-    .modal-amp { font-family: 'Great Vibes', cursive; font-size: 0.85em !important; }
+    /* ===== Dusty Blue touches ===== */
+    .grace-caps { font-style: normal !important; letter-spacing: 0.32em !important; text-indent: 0.32em; font-size: 14px !important; font-weight: 600 !important; color: #7E98AE !important; }
+    .tagline-band, .deadline-band { background: linear-gradient(135deg, #A8BCCD, #D6DEE6 50%, #C7CED6) !important; }
+    .card-accent-stripe { background: linear-gradient(90deg, #7E98AE, #B5C6D5 25%, #E3E8ED 50%, #C7CED6 75%, #7E98AE) !important; }
+    .modal-accent { background: linear-gradient(90deg, #7E98AE, #B5C6D5, #E3E8ED, #C7CED6, #7E98AE) !important; }
+    .card-f1 { background: linear-gradient(145deg, #C7CED6, #EDF1F5, #8FA9BF, #EDF1F5, #C7CED6) !important; }
 
     /* ================= MODAL (summary layout) ================= */
     .modal-overlay {
-      position: fixed; inset: 0;
-      background: rgba(30,42,54,0.78);
+      position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+      background: rgba(36,52,66,0.78);
       backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
       display: flex; align-items: center; justify-content: center;
       z-index: 999; padding: 24px; opacity: 0; pointer-events: none;
       transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1);
     }
-    .modal-overlay.active { opacity: 1; pointer-events: all; }
+    .modal-overlay.active { opacity: 1; pointer-events: auto; }
     .modal {
       width: 100%; max-width: 470px;
       transform: scale(0.94) translateY(18px);
       transition: transform 0.45s cubic-bezier(0.16,1,0.3,1);
-      background: #FDFEFE; border: 1px solid #A9B4BF;
+      background: #FDFEFF; border: 1px solid #8FA9BF;
       border-radius: 20px; overflow: hidden;
       max-height: 90vh; display: flex; flex-direction: column;
       box-shadow: 0 35px 100px rgba(0,0,0,0.6);
     }
     .modal-overlay.active .modal { transform: scale(1) translateY(0); }
-    .modal-accent { height: 4px; background: linear-gradient(90deg, #A9B4BF, #DDE3E8, #FAFBFC, #DDE3E8, #A9B4BF); flex-shrink: 0; }
+    .modal-accent { height: 4px; background: linear-gradient(90deg, #8FA9BF, #C7CED6, #FBFCFD, #C7CED6, #8FA9BF); flex-shrink: 0; }
     .modal-scroll { overflow-y: auto; }
     .modal-header {
       padding: 36px 30px 20px; text-align: center;
-      border-bottom: 1px solid rgba(169,180,191,0.30);
-      background: radial-gradient(circle at 50% 0%, #EAF0F4 0%, #FDFEFE 80%);
+      border-bottom: 1px solid rgba(143,169,191,0.30);
+      background: radial-gradient(circle at 50% 0%, #F5F7F9 0%, #FDFEFF 80%);
     }
-    .modal-names { font-family: 'Pinyon Script', cursive; font-weight: 400; font-size: clamp(28px, 7.4vw, 36px); color: #4A6074; line-height: 1.25; padding: 0.04em 0.2em 0.2em; }
-    .modal-amp { display: block; font-size: 0.7em; color: #7F96AA; line-height: 1.1; }
+    .modal-names { font-family: 'Pinyon Script', cursive; font-weight: 400; font-size: clamp(28px, 7.4vw, 36px); color: #5F7F9B; line-height: 1.25; padding: 0.04em 0.2em 0.2em; }
+    .modal-amp { display: block; font-size: 0.7em; color: #8FA9BF; line-height: 1.1; }
     .modal-tagline {
       font-family: 'Cinzel', serif; font-size: 9px; font-weight: 600;
-      letter-spacing: 0.32em; color: #6A8296; margin-top: 6px;
+      letter-spacing: 0.32em; color: #5F7F9B; margin-top: 6px;
       display: block; text-transform: uppercase;
     }
     .modal-body { padding: 26px 32px 34px; text-align: center; }
     .modal-title {
       font-family: 'Cinzel', serif; font-size: 13px; font-weight: 600;
-      letter-spacing: 0.34em; text-transform: uppercase; color: #2F4153; margin-bottom: 10px;
+      letter-spacing: 0.34em; text-transform: uppercase; color: #34495C; margin-bottom: 10px;
     }
     .modal-message {
       font-family: 'Cormorant Garamond', serif; font-style: italic;
-      font-size: 17px; font-weight: 500; color: #4A6074; line-height: 1.7; margin-bottom: 24px;
+      font-size: 17px; font-weight: 500; color: #5F7F9B; line-height: 1.7; margin-bottom: 24px;
     }
     .summary-card {
-      background: #FAFBFC; border: 1px solid rgba(169,180,191,0.30);
+      background: #FBFCFD; border: 1px solid rgba(143,169,191,0.30);
       border-radius: 10px; padding: 20px 22px; text-align: left; margin-bottom: 24px;
     }
     .summary-row {
       display: flex; justify-content: space-between; align-items: center;
-      gap: 12px; padding: 11px 0; border-bottom: 1px solid rgba(169,180,191,0.20);
+      gap: 12px; padding: 11px 0; border-bottom: 1px solid rgba(143,169,191,0.20);
     }
     .summary-row:last-child { border-bottom: none; }
     .summary-label {
       font-family: 'Cinzel', serif; font-size: 9.5px; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase; color: #6A8296; flex-shrink: 0;
+      letter-spacing: 0.18em; text-transform: uppercase; color: #5F7F9B; flex-shrink: 0;
     }
-    .summary-value { font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; color: #2F4153; text-align: right; }
+    .summary-value { font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; color: #34495C; text-align: right; }
     .summary-badge {
       display: inline-block; padding: 4px 10px; border-radius: 4px;
       font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600;
       letter-spacing: 0.1em; text-transform: uppercase;
     }
-    .summary-badge.accept { background: rgba(127,150,170,0.22); color: #33475A; border: 1px solid rgba(106,130,150,0.6); }
+    .summary-badge.accept { background: rgba(95,127,155,0.22); color: #34495C; border: 1px solid rgba(95,127,155,0.6); }
     .summary-badge.decline { background: rgba(143,42,34,0.1); color: #8F2A22; border: 1px solid rgba(143,42,34,0.3); }
     .summary-names { list-style: none; text-align: right; }
-    .summary-names li { font-size: 13px; color: #2F4153; line-height: 1.6; }
+    .summary-names li { font-size: 13px; color: #34495C; line-height: 1.6; }
     .modal-actions { display: flex; gap: 10px; }
     .btn-modal-close {
       display: inline-flex; align-items: center; justify-content: center;
       flex: 1; padding: 15px 24px; border-radius: 8px;
-      border: 1px solid #4A6074; cursor: pointer;
+      border: 1px solid #5F7F9B; cursor: pointer;
       font-family: 'Cinzel', serif; font-size: 11px; font-weight: 600;
       letter-spacing: 0.28em; text-transform: uppercase;
       transition: all 0.35s cubic-bezier(0.16,1,0.3,1);
-      background: #4A6074; color: #FAFBFC;
+      background: #5F7F9B; color: #FBFCFD;
     }
-    .btn-modal-close:hover { background: #2F4153; border-color: #2F4153; }
+    .btn-modal-close:hover { background: #34495C; border-color: #34495C; }
 
     @media (max-width: 540px) {
       .card-header, .tagline-band, .form-body, .btn-wrap,
@@ -609,17 +633,20 @@
     <div class="card-f1"><div class="card-f2"><div class="card">
       <div class="card-accent-stripe"></div>
       <div class="card-ib1"></div>
+      <div class="falling-flowers" aria-hidden="true"></div>
 
       <div class="card-header">
-        <span class="mono mono-p" aria-hidden="true">M</span>
-        <span class="mono mono-amp" aria-hidden="true">&amp;</span>
-        <span class="mono mono-c" aria-hidden="true">M</span>
-        <p class="header-eyebrow">The Wedding Of</p>
-        <span class="couple-name">Marvin</span>
-        <span class="couple-amp">and</span>
-        <span class="couple-name">Maria Caryl</span>
-        <p class="wedding-date">12 <i>|</i> 19 <i>|</i> 2026</p>
-        <p class="wedding-day">Saturday</p>
+        <p class="grace grace-caps">THE WEDDING OF</p>
+        <div class="names-line">
+          <span class="couple-name">Marvin</span><span class="couple-amp">&amp;</span><span class="couple-name">Maria Caryl</span>
+        </div>
+        <div class="date-block">
+          <span class="db-side">December<br/>2026</span>
+          <span class="db-bar"></span>
+          <span class="db-day">19</span>
+          <span class="db-bar"></span>
+          <span class="db-side">Saturday</span>
+        </div>
         <div class="names-rule">
           <div class="names-rule-line-l"></div>
           <div class="names-rule-dot"></div>
@@ -643,7 +670,7 @@
           <label class="field-label" for="guestSearch">Guest Name</label>
           <input type="text" id="guestSearch" class="field-input"
             placeholder="Type your first name or full name"
-            autocomplete="off" spellcheck="false" />
+            autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" />
           <div class="status-bar ready" id="statusBar" aria-live="polite">
             <div class="status-dot"></div>
             <span id="statusText">Ready &#8212; enter your name above</span>
@@ -666,7 +693,7 @@
             <div id="guestFields">
               <div class="guest-field-row show" id="guestRow1">
                 <span class="guest-num">i.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest1" class="field-input" placeholder="Primary Guest" disabled /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest1" class="field-input" placeholder="Primary Guest" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" disabled /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend1" checked onchange="toggleGuestAttendance(1)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -675,7 +702,7 @@
               </div>
               <div class="guest-field-row" id="guestRow2">
                 <span class="guest-num">ii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest2" class="field-input" placeholder="Guest 2" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest2" class="field-input" placeholder="Guest 2" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend2" checked onchange="toggleGuestAttendance(2)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -684,7 +711,7 @@
               </div>
               <div class="guest-field-row" id="guestRow3">
                 <span class="guest-num">iii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest3" class="field-input" placeholder="Guest 3" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest3" class="field-input" placeholder="Guest 3" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend3" checked onchange="toggleGuestAttendance(3)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -693,7 +720,7 @@
               </div>
               <div class="guest-field-row" id="guestRow4">
                 <span class="guest-num">iv.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest4" class="field-input" placeholder="Guest 4" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest4" class="field-input" placeholder="Guest 4" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend4" checked onchange="toggleGuestAttendance(4)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -702,7 +729,7 @@
               </div>
               <div class="guest-field-row" id="guestRow5">
                 <span class="guest-num">v.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest5" class="field-input" placeholder="Guest 5" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest5" class="field-input" placeholder="Guest 5" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend5" checked onchange="toggleGuestAttendance(5)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -711,7 +738,7 @@
               </div>
               <div class="guest-field-row" id="guestRow6">
                 <span class="guest-num">vi.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest6" class="field-input" placeholder="Guest 6" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest6" class="field-input" placeholder="Guest 6" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend6" checked onchange="toggleGuestAttendance(6)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -720,7 +747,7 @@
               </div>
               <div class="guest-field-row" id="guestRow7">
                 <span class="guest-num">vii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest7" class="field-input" placeholder="Guest 7" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest7" class="field-input" placeholder="Guest 7" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend7" checked onchange="toggleGuestAttendance(7)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -729,7 +756,7 @@
               </div>
               <div class="guest-field-row" id="guestRow8">
                 <span class="guest-num">viii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest8" class="field-input" placeholder="Guest 8" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest8" class="field-input" placeholder="Guest 8" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend8" checked onchange="toggleGuestAttendance(8)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -738,7 +765,7 @@
               </div>
               <div class="guest-field-row" id="guestRow9">
                 <span class="guest-num">ix.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest9" class="field-input" placeholder="Guest 9" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest9" class="field-input" placeholder="Guest 9" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend9" checked onchange="toggleGuestAttendance(9)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -747,7 +774,7 @@
               </div>
               <div class="guest-field-row" id="guestRow10">
                 <span class="guest-num">x.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest10" class="field-input" placeholder="Guest 10" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest10" class="field-input" placeholder="Guest 10" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend10" checked onchange="toggleGuestAttendance(10)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -756,7 +783,7 @@
               </div>
               <div class="guest-field-row" id="guestRow11">
                 <span class="guest-num">xi.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest11" class="field-input" placeholder="Guest 11" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest11" class="field-input" placeholder="Guest 11" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend11" checked onchange="toggleGuestAttendance(11)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -765,7 +792,7 @@
               </div>
               <div class="guest-field-row" id="guestRow12">
                 <span class="guest-num">xii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest12" class="field-input" placeholder="Guest 12" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest12" class="field-input" placeholder="Guest 12" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend12" checked onchange="toggleGuestAttendance(12)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -774,7 +801,7 @@
               </div>
               <div class="guest-field-row" id="guestRow13">
                 <span class="guest-num">xiii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest13" class="field-input" placeholder="Guest 13" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest13" class="field-input" placeholder="Guest 13" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend13" checked onchange="toggleGuestAttendance(13)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -783,7 +810,7 @@
               </div>
               <div class="guest-field-row" id="guestRow14">
                 <span class="guest-num">xiv.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest14" class="field-input" placeholder="Guest 14" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest14" class="field-input" placeholder="Guest 14" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend14" checked onchange="toggleGuestAttendance(14)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -792,7 +819,7 @@
               </div>
               <div class="guest-field-row" id="guestRow15">
                 <span class="guest-num">xv.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest15" class="field-input" placeholder="Guest 15" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest15" class="field-input" placeholder="Guest 15" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend15" checked onchange="toggleGuestAttendance(15)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -801,7 +828,7 @@
               </div>
               <div class="guest-field-row" id="guestRow16">
                 <span class="guest-num">xvi.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest16" class="field-input" placeholder="Guest 16" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest16" class="field-input" placeholder="Guest 16" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend16" checked onchange="toggleGuestAttendance(16)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -810,7 +837,7 @@
               </div>
               <div class="guest-field-row" id="guestRow17">
                 <span class="guest-num">xvii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest17" class="field-input" placeholder="Guest 17" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest17" class="field-input" placeholder="Guest 17" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend17" checked onchange="toggleGuestAttendance(17)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -819,7 +846,7 @@
               </div>
               <div class="guest-field-row" id="guestRow18">
                 <span class="guest-num">xviii.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest18" class="field-input" placeholder="Guest 18" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest18" class="field-input" placeholder="Guest 18" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend18" checked onchange="toggleGuestAttendance(18)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -828,7 +855,7 @@
               </div>
               <div class="guest-field-row" id="guestRow19">
                 <span class="guest-num">xix.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest19" class="field-input" placeholder="Guest 19" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest19" class="field-input" placeholder="Guest 19" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend19" checked onchange="toggleGuestAttendance(19)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -837,7 +864,7 @@
               </div>
               <div class="guest-field-row" id="guestRow20">
                 <span class="guest-num">xx.</span>
-                <div class="guest-input-wrap"><input type="text" id="guest20" class="field-input" placeholder="Guest 20" /></div>
+                <div class="guest-input-wrap"><input type="text" id="guest20" class="field-input" placeholder="Guest 20" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" /></div>
                 <label class="attend-toggle" title="Toggle attendance">
                   <input type="checkbox" id="guestAttend20" checked onchange="toggleGuestAttendance(20)" />
                   <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -867,7 +894,11 @@
         <span class="deadline-date">December 8, 2026</span>
       </div>
 
-      <div class="page-footer" style="padding-top:26px;">
+      <div class="note-section">
+        <p>Only guests with a <strong>confirmed RSVP</strong> will be accommodated at the celebration. We kindly ask that you refer to the names listed on your invitation.</p>
+        <p><strong>STRICTLY NO PLUS ONE.</strong><br/>Thank you for your kind understanding.</p>
+      </div>
+      <div class="page-footer">
         <p>Marvin &amp; Maria Caryl &#8212; with love</p>
       </div>
     </div></div></div>
@@ -880,7 +911,7 @@
       <div class="modal-accent"></div>
       <div class="modal-scroll">
         <div class="modal-header">
-          <div class="modal-names">Marvin<span class="modal-amp">and</span>Maria Caryl</div>
+          <div class="modal-names">Marvin<span class="modal-amp">&amp;</span>Maria Caryl</div>
           <span class="modal-tagline">with love &amp; gratitude &middot; 12.19.2026</span>
         </div>
         <div class="modal-body">
@@ -1152,5 +1183,26 @@
 
 
 
+<script>
+(function(){
+  var box=document.querySelector('.falling-flowers'); if(!box) return;
+  var cols=[['#B5C6D5','#E3E8ED'],['#7E98AE','#C7CED6'],['#A8BCCD','#FFFFFF'],['#C7CED6','#7E98AE'],['#8FA9BF','#E3E8ED'],['#CBD7E2','#A9B4BF']];
+  var n=window.innerWidth<540?12:18;
+  for(var i=0;i<n;i++){
+    var c=cols[i%cols.length], el=document.createElement('span'), leaf=(i%5===4);
+    el.className='ff';
+    el.innerHTML = leaf
+      ? '<svg viewBox="0 0 20 20"><path d="M10 1 C16 6 16 14 10 19 C4 14 4 6 10 1Z" fill="#C7CED6"/><path d="M10 3 L10 17" stroke="#8FA9BF" stroke-width=".8"/></svg>'
+      : '<svg viewBox="0 0 20 20"><g fill="'+c[0]+'"><circle cx="10" cy="5" r="4.2"/><circle cx="14.8" cy="8.5" r="4.2"/><circle cx="13" cy="14" r="4.2"/><circle cx="7" cy="14" r="4.2"/><circle cx="5.2" cy="8.5" r="4.2"/></g><circle cx="10" cy="10" r="2.6" fill="'+c[1]+'"/></svg>';
+    el.style.left=(Math.random()*94+3).toFixed(1)+'%';
+    el.style.setProperty('--sz',(9+Math.random()*9).toFixed(0)+'px');
+    el.style.setProperty('--dur',(26+Math.random()*16).toFixed(1)+'s');
+    el.style.setProperty('--delay',(-Math.random()*40).toFixed(1)+'s');
+    el.style.setProperty('--sway',(10+Math.random()*22).toFixed(0)+'px');
+    el.style.setProperty('--spin',(8+Math.random()*8).toFixed(1)+'s');
+    box.appendChild(el);
+  }
+})();
+</script>
 </body>
 </html>
